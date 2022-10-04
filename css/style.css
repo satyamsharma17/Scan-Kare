@@ -103,7 +103,7 @@
 }
 
 .button {
-  display: inline-block;
+  /* display: inline-block; */
   padding: 8px 22px;
   color: #fff;
   background-color: #3652A2;
@@ -118,6 +118,63 @@
   color: #3652A2;
   background-color: #fff;
   border: 1px solid #3652A2;
+}
+
+.work-control {
+  font-family: Mont-Bold;
+  padding: 2%;
+}
+
+.work-button {
+  /* display: inline-block; */
+  padding: 8px 22px;
+  color: #fff;
+  background-color: #3652A2;
+  border: 1px solid transparent;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.work-button:hover {
+  text-decoration: none;
+  color: #3652A2;
+  background-color: #fff;
+  border: 1px solid #3652A2;
+}
+
+/* get-started */
+#get-started {
+  padding-bottom: 4rem;
+}
+
+.get-started-control {
+  font-family: Mont-Bold;
+  text-align: center;
+  padding: 2%;
+}
+
+.get-started-button {
+  /* display: inline-block; */
+  padding: 8px 22px;
+  color: #fff;
+  background-color: #3652A2;
+  border: 1px solid transparent;
+  text-decoration: none;
+  border-radius: 10px;
+  transition: 0.5s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+}
+
+.get-started-button:hover {
+  text-decoration: none;
+  color: #3652A2;
+  background-color: #fff;
+  border: 1px solid #3652A2;
+}
+
+/* partners */
+.business-card {
+  padding: 0 4rem 0 4rem;
 }
 
 @media screen and (max-width: 991.98px) {
@@ -432,12 +489,148 @@ figure {
   font-family: Mont-Regular;
 }
 
+/* work */
+
+.work-section-title {
+  font-family: Mont-Bold;
+  font-size: 3rem;
+}
+
+
+
+.work-info {
+  padding: 5%;
+  /* align-items: center; */
+  /* text-align: center; */
+}
+
+.work-section-image {
+  padding: 2%;
+}
+
+.work-section .title {
+  font-family: Mont-Bold;
+  padding: 2%;
+}
+
+.work-section .description {
+  font-Size: 18px;
+  color: grey;
+  padding: 2%;
+  font-family: Mont-Regular;
+}
+
+.work-image-section {
+  width: 100%;
+  text-align: center;
+}
+
+.event-image-page {
+  text-align: center;
+}
+
+.work-image {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* business */
+.business-section-title {
+  font-family: Mont-Bold;
+  font-size: 3rem;
+}
+
+/* get-started */
+.get-started-section-title {
+  font-family: Mont-Bold;
+  font-size: 3rem;
+}
+
+.get-started-section-description {
+  font-family: Mont-Light;
+  font-size: 1.5rem;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
+  /* event card */
+
+  .wrap-event {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 2% 5%;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px) {
+  .wrap-event {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 600px) {
+  .wrap-event {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .wrap-event {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 1200px) {
+  .work-section-item {
+    display: block;
+  }
+
+  .work-section-item-first {
+    display: block;
+  }
+
+  .work-section-item-second {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .work-info .title,
+  .description,
+  .work-control {
+    text-align: center !important;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .card-section {
     display: flex;
   }
 
-  .solution-section-title {
-    padding: 3rem 22rem 2rem 22rem;
+  .work-section-title,
+  .solution-section-title,
+  .get-started-section-title {
+    padding: 3rem 24rem 2rem 24rem;
+  }
+
+  .business-section-title {
+    padding: 3rem 20rem 2rem 20rem;
+  }
+
+  .get-started-section-description {
+    padding: 0 16rem 0 16rem;
   }
 }
